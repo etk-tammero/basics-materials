@@ -6,12 +6,10 @@ def debug_print(debug_msg=None, **kwargs):
         print("{}: {}".format(key, value))
 if __name__ == "__main__":
     input_str = input("Enter numbers, separated by ',': ")
-
-    unsorted_list = input_str.split(",")
+    
     input_list = input_str.split(",")
     debug_print(input_list=input_list)
-
-    debug_print(unsorted_list=unsorted_list)
+    
     value_list = []
     for x in input_list:
         try:
